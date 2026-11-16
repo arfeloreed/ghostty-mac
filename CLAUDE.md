@@ -57,7 +57,7 @@ ghostty +list-keybinds --default                 # the default keybinds
 
 Single-owner repo without a pull request flow. Work is committed on a branch, never on `main`. It reaches `main` only through a local merge the owner approves, and reaches GitHub only through a push the owner approves each time. These rules apply to each commit.
 
-- The GitHub repository is public, so every commit is public once pushed: no credentials, no path inside one person's home folder, and nothing from `reed-docs/`.
+- The GitHub repository is public, so every commit is public once pushed: no credentials, no path inside one person's home folder, and nothing from `reed-docs/` or `.claude/`. Both folders are gitignored at the owner's request; `.claude/settings.json` is a local allowlist only.
 
 - One concern per commit. A theme change and a keybind change never share one.
 - A fix is checked with the step that would have caught the problem (see "Check every edit in three steps").

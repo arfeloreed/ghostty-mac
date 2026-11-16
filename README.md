@@ -14,7 +14,7 @@ Ito ang paliwanag kung ano ang laman ng Ghostty config ko, saan makikita ang baw
 | Ang config na binabasa ng Ghostty | `~/.config/ghostty/config.ghostty` |
 | Ang gabay na ito | `~/.config/ghostty/README.md` |
 | Mga tagubilin para kay Claude (nasa git) | `~/.config/ghostty/CLAUDE.md` |
-| Mga command na pwedeng patakbuhin ni Claude nang hindi nagtatanong | `~/.config/ghostty/.claude/settings.json` |
+| Mga command na pwedeng patakbuhin ni Claude nang hindi nagtatanong (wala sa git) | `~/.config/ghostty/.claude/settings.json` |
 | Listahan ng mga file na hindi isasama sa git | `~/.config/ghostty/.gitignore` |
 | Personal kong notes (wala sa git) | `~/.config/ghostty/reed-docs/` |
 | Kopya sa GitHub (public, kita ng lahat) | https://github.com/arfeloreed/ghostty-mac |
