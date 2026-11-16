@@ -1,6 +1,6 @@
 # Ghostty Config Developer Notes
 
-Personal configuration for the Ghostty terminal (1.4.0 stable, installed as a Homebrew cask) on macOS. Everything lives in one file, `config.ghostty`, which Ghostty reads from `$XDG_CONFIG_HOME/ghostty/` (`~/.config/ghostty/` when the variable is unset, as it is on this machine). The config copies the look and behaviour of the WezTerm setup (see Related Repos). Start by reading `config.ghostty`; its comments explain every value that is not obvious.
+Personal configuration for the Ghostty terminal (1.4.0 stable, installed as a Homebrew cask) on macOS. Everything lives in one file, `config.ghostty`, which Ghostty reads from `$XDG_CONFIG_HOME/ghostty/` (`~/.config/ghostty/` when the variable is unset, as it is on this machine). The config copies the look and behaviour of the WezTerm setup (see Related Repos). Start by reading `config.ghostty`; its comments explain every value that is not obvious. [README.md](./README.md) is the owner's guide to the same config.
 
 This folder is a git repository with no remote; see Pull Requests for the commit flow.
 
@@ -36,9 +36,12 @@ Before using a config key, keybind action or CLI action, read its documentation 
 
 ## Project Docs
 
-There is no `docs/` folder and no `README.md`. Plans and investigation notes follow the global `reed-docs/` rule.
+There is no `docs/` folder. Plans and investigation notes follow the global `reed-docs/` rule.
 
-- This `CLAUDE.md` and the comments inside `config.ghostty` are the only docs, and both are **Living reference**. A change to a value whose comment explains it updates that comment in the same change.
+- This `CLAUDE.md`, the comments inside `config.ghostty`, and [README.md](./README.md) are the docs, and all three are **Living reference**. A change to a value whose comment explains it updates that comment in the same change.
+- README.md is the owner's guide: where each file is, every setting with its value and meaning, how to change, check and roll back the config, and the useful commands. A change to a value, a file location or a command it lists updates README.md in the same commit.
+- README.md is written in Tagalog with English technical terms, at the owner's request. Keep that language when editing it. Code, comments, commit messages and this file stay in English.
+- README.md commands must paste cleanly into zsh, which has `interactivecomments` off: no `#` comments inside its command blocks.
 - Root files that tools look for: this `CLAUDE.md` only. No UI, so no `PRODUCT.md` or `DESIGN.md`.
 
 ## Commands and Safety
@@ -69,6 +72,7 @@ Single-owner repo with no remote and no pull request flow. Work is committed on 
 - One concern per commit. A theme change and a keybind change never share one.
 - A fix is checked with the step that would have caught the problem (see "Check every edit in three steps").
 - A changed value whose comment explains it gets an updated comment in the same commit.
+- A changed value, file location or command that README.md lists gets an updated README.md in the same commit.
 - Ghostty reads `config.ghostty` from whatever branch is checked out, so switching branches changes the config on the next reload.
 
 ## Project Contracts
@@ -110,6 +114,6 @@ None yet. If the file grows enough to split (for example keybinds in their own f
 ## Keeping This File Current
 
 - New option that is surprising or needs a restart: note it in Commands and Safety or Project Contracts.
-- Ghostty upgrade (`brew upgrade --cask ghostty`): update the version in the first paragraph and the Documentation Policy table, then run the three checks.
+- Ghostty upgrade (`brew upgrade --cask ghostty`): update the version in the first paragraph, the Documentation Policy table and the first lines of README.md, then run the three checks.
 - A path, command or URL in this file stops existing: fix it in the same change that removed it.
 - Paths here use `~/.config` or this folder, never one person's home folder spelled out.
