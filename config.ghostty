@@ -14,6 +14,12 @@ font-size = 18
 # macOS default).
 alpha-blending = linear-corrected
 
+# Lifts text that is almost the same colour as the background so it never
+# disappears. 1.1 is the docs' value for "avoid invisible text"; it is low
+# enough to leave the theme's normal colours alone (the default, 1, does
+# nothing).
+minimum-contrast = 1.1
+
 # See-through, blurred background. At 0.80 (tuned by eye) the desktop
 # shows through but text stays easy to read; 20 is Ghostty's own default
 # blur strength. The colour is darker than Nord's #2e3440 so text stays
