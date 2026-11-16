@@ -47,6 +47,7 @@ nvim ~/.config/ghostty/config.ghostty
 | Pagsara ng window o tab (`confirm-close-surface`) | `always` | Laging nagtatanong bago magsara, kahit walang tumatakbong program. Sa default ng Ghostty, nagtatanong lang kapag may tumatakbo pa. |
 | Abiso pag tapos ang command (`notify-on-command-finish`, `notify-on-command-finish-action`) | `unfocused`, `bell,notify` | Kapag nasa ibang app o window ka at natapos ang command na tumagal nang higit 5 segundo: tumatalbog ang icon sa Dock, may marka ng bell sa title ng tab, at may abiso ng Mac. Sa default ng Ghostty, walang abiso. |
 | Itago ang mouse (`mouse-hide-while-typing`) | `true` | Nawawala ang mouse habang nagta-type para hindi nito natatakpan ang text. Babalik ito pag ginalaw mo ang mouse. |
+| Ibalik ang mga window (`window-save-state`) | `always` | Sa pagbukas ulit ng Ghostty, babalik ang mga window, tab at hati, pati ang folder kung nasaan ka. Hindi babalik ang mga program na tumatakbo noon (halimbawa Neovim); bagong shell ang bubukas. |
 
 ---
 
@@ -69,6 +70,7 @@ Mga paalala:
 - **Kapal ng background:** ang pagbago ng `background-opacity` ay hindi gumagana sa reload. Isara ang buong Ghostty (`Command+Q`) at buksan ulit.
 - **Puwang sa gilid:** ang pagbago ng `window-padding-x`, `window-padding-y` at `window-padding-balance` ay sa bagong window o tab lang lalabas.
 - **Abiso pag tapos ang command:** sa unang abiso, tatanungin ka ng Mac kung papayagan ang Ghostty. Kung walang lumalabas, buksan ang System Settings, tapos Notifications, tapos Ghostty, at i-on.
+- **Ibalik ang mga window:** nase-save lang ang mga window pag isinara ang Ghostty (`Command+Q`). Kaya ang unang `Command+Q` pagkatapos baguhin ang `window-save-state` ang unang magse-save.
 - **Comment:** ang `#` ay sa simula lang ng linya gumagana. Kapag nilagay sa dulo ng isang setting, magiging bahagi ito ng value at masisira ang setting.
 - **Git branch:** kung anong branch ang nakabukas, iyon ang config na babasahin ng Ghostty sa susunod na reload.
 

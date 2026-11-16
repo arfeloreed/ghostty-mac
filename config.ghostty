@@ -61,3 +61,9 @@ notify-on-command-finish-action = bell,notify
 # Hide the mouse pointer while typing so it never covers text; it comes
 # back as soon as the mouse moves.
 mouse-hide-while-typing = true
+
+# Reopen windows, tabs, splits and their folders after every quit. The
+# default saves them only after a forced quit or when window restoring is
+# turned on system-wide in System Settings. State is written on quit, so
+# the first quit after this change is the first one that saves.
+window-save-state = always
