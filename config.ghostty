@@ -57,3 +57,7 @@ confirm-close-surface = always
 # action is bell only, with no notification.
 notify-on-command-finish = unfocused
 notify-on-command-finish-action = bell,notify
+
+# Hide the mouse pointer while typing so it never covers text; it comes
+# back as soon as the mouse moves.
+mouse-hide-while-typing = true

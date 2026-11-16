@@ -46,6 +46,7 @@ nvim ~/.config/ghostty/config.ghostty
 | Icon ng app (`macos-icon`) | `glass` | Ang icon sa Dock at sa `Command+Tab`. Bagay ito sa malabo at tagos na window. Hindi nagbabago ang icon sa Finder. Ibang pagpipilian: `official`, `blueprint`, `chalkboard`, `microchip`, `holographic`, `paper`, `retro`, `xray`. |
 | Pagsara ng window o tab (`confirm-close-surface`) | `always` | Laging nagtatanong bago magsara, kahit walang tumatakbong program. Sa default ng Ghostty, nagtatanong lang kapag may tumatakbo pa. |
 | Abiso pag tapos ang command (`notify-on-command-finish`, `notify-on-command-finish-action`) | `unfocused`, `bell,notify` | Kapag nasa ibang app o window ka at natapos ang command na tumagal nang higit 5 segundo: tumatalbog ang icon sa Dock, may marka ng bell sa title ng tab, at may abiso ng Mac. Sa default ng Ghostty, walang abiso. |
+| Itago ang mouse (`mouse-hide-while-typing`) | `true` | Nawawala ang mouse habang nagta-type para hindi nito natatakpan ang text. Babalik ito pag ginalaw mo ang mouse. |
 
 ---
 
