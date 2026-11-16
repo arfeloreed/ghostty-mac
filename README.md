@@ -43,6 +43,7 @@ nvim ~/.config/ghostty/config.ghostty
 | Labo ng nasa likod (`background-blur`) | `20` | Gaano kalabo ang desktop na nakikita sa likod. `20` ang sariling default ng Ghostty. |
 | Puwang sa gilid (`window-padding-x`, `window-padding-y`) | `3` sa kaliwa at kanan, `0` sa taas at baba | Manipis na puwang sa kaliwa at kanan, wala sa taas at baba. `2` sa lahat ng gilid ang default ng Ghostty. |
 | Pantay na puwang (`window-padding-balance`) | `true` | Bihirang sakto ang laki ng window sa bilang ng letra, kaya may natitirang konting puwang. Hinahati ito sa apat na gilid imbes na maipon sa kanan at sa ibaba. Hindi pinapalaki nang sobra ang puwang sa taas; ang sobra ay sa ibaba napupunta. |
+| Icon ng app (`macos-icon`) | `glass` | Ang icon sa Dock at sa `Command+Tab`. Bagay ito sa malabo at tagos na window. Hindi nagbabago ang icon sa Finder. Ibang pagpipilian: `official`, `blueprint`, `chalkboard`, `microchip`, `holographic`, `paper`, `retro`, `xray`. |
 | Pagsara ng window o tab (`confirm-close-surface`) | `always` | Laging nagtatanong bago magsara, kahit walang tumatakbong program. Sa default ng Ghostty, nagtatanong lang kapag may tumatakbo pa. |
 
 ---

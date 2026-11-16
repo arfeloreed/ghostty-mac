@@ -43,6 +43,10 @@ window-padding-y = 0
 # right and bottom (true caps the top share and puts the rest at the bottom).
 window-padding-balance = true
 
+# Dock and app-switcher icon; the glass variant suits the blurred,
+# see-through window. Finder keeps the official icon (macOS limitation).
+macos-icon = glass
+
 # Always ask before closing a window or tab, even when nothing is running.
 # The default (true) asks only while a program is still running.
 confirm-close-surface = always
