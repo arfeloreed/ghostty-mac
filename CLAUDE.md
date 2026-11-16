@@ -2,7 +2,7 @@
 
 Personal configuration for the Ghostty terminal (1.4.0 stable, installed as a Homebrew cask) on macOS. Everything lives in one file, `config.ghostty`, which Ghostty reads from `$XDG_CONFIG_HOME/ghostty/` (`~/.config/ghostty/` when the variable is unset, as it is on this machine). Start by reading `config.ghostty`; its comments explain every value that is not obvious. [README.md](./README.md) is the owner's guide to the same config.
 
-This folder is a git repository with no remote; see Pull Requests for the commit flow.
+This folder is a git repository with a public GitHub remote, `origin` (https://github.com/arfeloreed/ghostty-mac); see Pull Requests for the commit flow.
 
 ## Documentation Policy
 
@@ -51,11 +51,13 @@ ghostty +list-keybinds --default                 # the default keybinds
 - **Run `+validate-config` alone in a Claude Code shell call, or pipe it through `cat`.** Writing straight to Claude Code's captured output, it erases everything printed earlier in the same call (seen on 1.4.0). Its own output and exit code survive.
 - **The font is built into Ghostty.** With no `font-family`, Ghostty draws text with its embedded JetBrains Mono and icons with its embedded Symbols Nerd Font. Neither is installed on the system, so `+list-fonts --family="JetBrains Mono"` finds nothing; check with `+show-face --string=a` instead. `font-style` and the other style keys are ignored while `font-family` is unset.
 - **Reloading is manual.** `Command+Shift+,` reloads the config; nothing reloads it on save. Some options only reach new windows or tabs, and some (for example `background-opacity` on macOS) need a full quit and restart of Ghostty. `+explain-config <key>` says which.
-- No database, network service or credential is involved, so nothing here can touch production.
+- No database or credential is involved, so nothing here can touch production. The only network service is the GitHub remote, reached by `git fetch` and `git push`.
 
 ## Pull Requests
 
-Single-owner repo with no remote and no pull request flow. Work is committed on a branch, never on `main`, and reaches `main` only through a merge the owner approves. These rules apply to each commit.
+Single-owner repo without a pull request flow. Work is committed on a branch, never on `main`. It reaches `main` only through a local merge the owner approves, and reaches GitHub only through a push the owner approves each time. These rules apply to each commit.
+
+- The GitHub repository is public, so every commit is public once pushed: no credentials, no path inside one person's home folder, and nothing from `reed-docs/`.
 
 - One concern per commit. A theme change and a keybind change never share one.
 - A fix is checked with the step that would have caught the problem (see "Check every edit in three steps").

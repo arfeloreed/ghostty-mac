@@ -17,6 +17,7 @@ Ito ang paliwanag kung ano ang laman ng Ghostty config ko, saan makikita ang baw
 | Mga command na pwedeng patakbuhin ni Claude nang hindi nagtatanong | `~/.config/ghostty/.claude/settings.json` |
 | Listahan ng mga file na hindi isasama sa git | `~/.config/ghostty/.gitignore` |
 | Personal kong notes (wala sa git) | `~/.config/ghostty/reed-docs/` |
+| Kopya sa GitHub (public, kita ng lahat) | https://github.com/arfeloreed/ghostty-mac |
 
 Isang file lang ang config: `config.ghostty`. Huwag gumawa ng file na `config` sa folder na ito, o ng kahit anong file sa `~/Library/Application Support/com.mitchellh.ghostty/`. Binabasa rin ng Ghostty ang mga iyon, at ang huling nabasa ang nasusunod. Kaya kung nasa dalawang file ang isang setting, mahirap malaman kung alin ang gumagana.
 
@@ -54,7 +55,7 @@ nvim ~/.config/ghostty/config.ghostty
    Kapag walang lumabas, ayos. Kapag may mali, sasabihin nito kung anong linya.
 3. I-reload ang Ghostty: `Command+Shift+,`. Hindi ito kusang nagre-reload pagka-save.
 4. Tingnan ang window kung tama ang itsura.
-5. Kapag maayos, i-commit sa git.
+5. Kapag maayos, i-commit sa git, tapos i-push sa GitHub.
 
 Mga paalala:
 
