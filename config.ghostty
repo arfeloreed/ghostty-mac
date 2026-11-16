@@ -67,3 +67,8 @@ mouse-hide-while-typing = true
 # turned on system-wide in System Settings. State is written on quit, so
 # the first quit after this change is the first one that saves.
 window-save-state = always
+
+# Selecting text copies it to the clipboard right away, no Command+C. It
+# also replaces whatever the clipboard held before. The macOS default is
+# none.
+copy-on-select = clipboard

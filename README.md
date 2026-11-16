@@ -48,6 +48,7 @@ nvim ~/.config/ghostty/config.ghostty
 | Abiso pag tapos ang command (`notify-on-command-finish`, `notify-on-command-finish-action`) | `unfocused`, `bell,notify` | Kapag nasa ibang app o window ka at natapos ang command na tumagal nang higit 5 segundo: tumatalbog ang icon sa Dock, may marka ng bell sa title ng tab, at may abiso ng Mac. Sa default ng Ghostty, walang abiso. |
 | Itago ang mouse (`mouse-hide-while-typing`) | `true` | Nawawala ang mouse habang nagta-type para hindi nito natatakpan ang text. Babalik ito pag ginalaw mo ang mouse. |
 | Ibalik ang mga window (`window-save-state`) | `always` | Sa pagbukas ulit ng Ghostty, babalik ang mga window, tab at hati, pati ang folder kung nasaan ka. Hindi babalik ang mga program na tumatakbo noon (halimbawa Neovim); bagong shell ang bubukas. |
+| Kopya pag nag-highlight (`copy-on-select`) | `clipboard` | Pag nag-highlight ka ng text gamit ang mouse, nasa clipboard na agad, hindi na kailangan ng `Command+C`. Paalala: napapalitan nito ang dating laman ng clipboard tuwing may hina-highlight ka. |
 
 ---
 
