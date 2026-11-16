@@ -34,7 +34,7 @@ nvim ~/.config/ghostty/config.ghostty
 | Setting | Value | Ibig sabihin |
 | --- | --- | --- |
 | Theme (`theme`) | `Nord` | Ang mga kulay ng terminal. Galing sa WezTerm. |
-| Font (`font-family`, `font-style`, `font-size`) | `FiraCode Nerd Font`, `Medium`, `18` | Pareho sa WezTerm. |
+| Font (`font-size`) | JetBrains Mono, `18` | Sariling font ng Ghostty. Ito ang ginagamit kasi walang `font-family` sa config. Galing din sa Ghostty ang mga icon (Symbols Nerd Font). Mas malaki ang `18` kaysa sa default na `13`. |
 | Kulay ng background (`background`) | `#1c1f2a` | Mas madilim kaysa sa sariling kulay ng Nord (`#2e3440`), para mabasa pa rin ang text kahit maliwanag ang desktop sa likod. |
 | Kapal ng background (`background-opacity`) | `0.80` | `1` ay buo at hindi tagos, `0` ay kita ang lahat sa likod. Ako mismo ang nag-adjust nito. |
 | Labo ng nasa likod (`background-blur`) | `20` | Gaano kalabo ang desktop na nakikita sa likod. `20` ang sariling default ng Ghostty. |

@@ -4,9 +4,10 @@
 
 theme = Nord
 
-# Same family and weight as WezTerm
-font-family = FiraCode Nerd Font
-font-style = Medium
+# No font-family on purpose: Ghostty then uses its built-in JetBrains Mono,
+# and its built-in Symbols Nerd Font for icons. font-style is left out too,
+# because Ghostty ignores it without a font-family. 18 is larger than the
+# default of 13.
 font-size = 18
 
 # See-through, blurred background instead of a wallpaper. At 0.80 (tuned

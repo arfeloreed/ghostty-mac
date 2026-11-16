@@ -61,7 +61,7 @@ ghostty +list-keybinds --default                 # the default keybinds
 
 - **Check every edit in three steps**, the config's version of the three test levels. Unit: `+validate-config` exits 0 with no output; it catches unknown keys and invalid values, with file and line. Integration: the lookup commands confirm the value resolves to something real (`+list-themes` for a theme name, `+list-fonts --family` and `+show-face` for a font). End to end: reload Ghostty and look at a window. `+validate-config` does not check that a theme, font or image exists, so step one alone is not enough.
 - **Run `+validate-config` alone in a Claude Code shell call, or pipe it through `cat`.** Writing straight to Claude Code's captured output, it erases everything printed earlier in the same call (seen on 1.4.0). Its own output and exit code survive.
-- **Plain `+list-fonts` hides the configured font.** It lists `FiraCode Nerd Font Mono` but not `FiraCode Nerd Font`, which is the family the config uses and which Ghostty does load. Check a font with `--family` and `+show-face`, not with the plain list.
+- **The font is built into Ghostty.** With no `font-family`, Ghostty draws text with its embedded JetBrains Mono and icons with its embedded Symbols Nerd Font. Neither is installed on the system, so `+list-fonts --family="JetBrains Mono"` finds nothing; check with `+show-face --string=a` instead. `font-style` and the other style keys are ignored while `font-family` is unset.
 - **Reloading is manual.** `Command+Shift+,` reloads the config; nothing reloads it on save. Some options only reach new windows or tabs, and some (for example `background-opacity` on macOS) need a full quit and restart of Ghostty. `+explain-config <key>` says which.
 - No database, network service or credential is involved, so nothing here can touch production.
 
@@ -105,7 +105,7 @@ None yet. If the file grows enough to split (for example keybinds in their own f
 
 ### Not applicable here
 
-- Dependency families and fakes: no code and no side-effecting clients; the external pieces are the installed fonts and the Ghostty app itself.
+- Dependency families and fakes: no code and no side-effecting clients; the only external piece is the Ghostty app itself, which also carries the fonts.
 - Layers and import direction, Where rules run, Events, Status lifecycles, State coordination, Framework hook points: a single flat config file, no code.
 - Authorization, Per-request state on the server: single-user local config, no server.
 - Optimistic writes and persisted state: the config stores nothing; Ghostty keeps its own window state.
