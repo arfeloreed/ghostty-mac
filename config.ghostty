@@ -50,3 +50,10 @@ macos-icon = glass
 # Always ask before closing a window or tab, even when nothing is running.
 # The default (true) asks only while a program is still running.
 confirm-close-surface = always
+
+# When a command that ran longer than 5 seconds (the default threshold)
+# finishes while this window is not focused, bounce the Dock icon, mark the
+# tab title (bell) and send a macOS notification (notify). The default
+# action is bell only, with no notification.
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = bell,notify

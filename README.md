@@ -45,6 +45,7 @@ nvim ~/.config/ghostty/config.ghostty
 | Pantay na puwang (`window-padding-balance`) | `true` | Bihirang sakto ang laki ng window sa bilang ng letra, kaya may natitirang konting puwang. Hinahati ito sa apat na gilid imbes na maipon sa kanan at sa ibaba. Hindi pinapalaki nang sobra ang puwang sa taas; ang sobra ay sa ibaba napupunta. |
 | Icon ng app (`macos-icon`) | `glass` | Ang icon sa Dock at sa `Command+Tab`. Bagay ito sa malabo at tagos na window. Hindi nagbabago ang icon sa Finder. Ibang pagpipilian: `official`, `blueprint`, `chalkboard`, `microchip`, `holographic`, `paper`, `retro`, `xray`. |
 | Pagsara ng window o tab (`confirm-close-surface`) | `always` | Laging nagtatanong bago magsara, kahit walang tumatakbong program. Sa default ng Ghostty, nagtatanong lang kapag may tumatakbo pa. |
+| Abiso pag tapos ang command (`notify-on-command-finish`, `notify-on-command-finish-action`) | `unfocused`, `bell,notify` | Kapag nasa ibang app o window ka at natapos ang command na tumagal nang higit 5 segundo: tumatalbog ang icon sa Dock, may marka ng bell sa title ng tab, at may abiso ng Mac. Sa default ng Ghostty, walang abiso. |
 
 ---
 
@@ -66,6 +67,7 @@ Mga paalala:
 
 - **Kapal ng background:** ang pagbago ng `background-opacity` ay hindi gumagana sa reload. Isara ang buong Ghostty (`Command+Q`) at buksan ulit.
 - **Puwang sa gilid:** ang pagbago ng `window-padding-x`, `window-padding-y` at `window-padding-balance` ay sa bagong window o tab lang lalabas.
+- **Abiso pag tapos ang command:** sa unang abiso, tatanungin ka ng Mac kung papayagan ang Ghostty. Kung walang lumalabas, buksan ang System Settings, tapos Notifications, tapos Ghostty, at i-on.
 - **Comment:** ang `#` ay sa simula lang ng linya gumagana. Kapag nilagay sa dulo ng isang setting, magiging bahagi ito ng value at masisira ang setting.
 - **Git branch:** kung anong branch ang nakabukas, iyon ang config na babasahin ng Ghostty sa susunod na reload.
 
