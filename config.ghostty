@@ -9,6 +9,11 @@ theme = Nord
 # default of 13.
 font-size = 18
 
+# Removes the dark fringe around coloured text (red on green and similar)
+# while keeping text weight close to macOS's own blending (native, the
+# macOS default).
+alpha-blending = linear-corrected
+
 # See-through, blurred background. At 0.80 (tuned by eye) the desktop
 # shows through but text stays easy to read; 20 is Ghostty's own default
 # blur strength. The colour is darker than Nord's #2e3440 so text stays

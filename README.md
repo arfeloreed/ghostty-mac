@@ -35,6 +35,7 @@ nvim ~/.config/ghostty/config.ghostty
 | --- | --- | --- |
 | Theme (`theme`) | `Nord` | Ang mga kulay ng terminal. |
 | Font (`font-size`) | JetBrains Mono, `18` | Sariling font ng Ghostty. Ito ang ginagamit kasi walang `font-family` sa config. Galing din sa Ghostty ang mga icon (Symbols Nerd Font). Mas malaki ang `18` kaysa sa default na `13`. |
+| Linis ng gilid ng text (`alpha-blending`) | `linear-corrected` | Inaalis ang maitim na anino sa gilid ng makukulay na letra (halimbawa pula sa berde). Halos pareho pa rin ang kapal ng text. Sa Mac, `native` ang default. |
 | Kulay ng background (`background`) | `#1c1f2a` | Mas madilim kaysa sa sariling kulay ng Nord (`#2e3440`), para mabasa pa rin ang text kahit maliwanag ang desktop sa likod. |
 | Kapal ng background (`background-opacity`) | `0.80` | `1` ay buo at hindi tagos, `0` ay kita ang lahat sa likod. Ako mismo ang nag-adjust nito. |
 | Labo ng nasa likod (`background-blur`) | `20` | Gaano kalabo ang desktop na nakikita sa likod. `20` ang sariling default ng Ghostty. |
