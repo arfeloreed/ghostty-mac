@@ -57,3 +57,9 @@ tags
 # Persistent undo
 [._]*.un~
 # End of https://www.toptal.com/developers/gitignore/api/macos,vim
+
+# Claude Code: personal settings, worktrees and notes stay local.
+# Commit .claude/settings.json (team allowlist); keep the rest out.
+.claude/*
+!.claude/settings.json
+!.claude/skills/

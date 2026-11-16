@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./**)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(tree:*)",
+      "Bash(wc:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(grep:*)",
+      "Bash(diff:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(git show:*)",
+      "Bash(ghostty +version:*)",
+      "Bash(ghostty +validate-config:*)",
+      "Bash(ghostty +explain-config:*)",
+      "Bash(ghostty +show-config:*)",
+      "Bash(ghostty +list-themes:*)",
+      "Bash(ghostty +list-fonts:*)",
+      "Bash(ghostty +show-face:*)",
+      "Bash(ghostty +list-keybinds:*)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty +version:*)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty +validate-config:*)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty +explain-config:*)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty +show-config:*)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty +list-themes:*)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty +list-fonts:*)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty +show-face:*)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty +list-keybinds:*)"
+    ],
+    "ask": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git stash:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Bash(rm -rf:*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)"
+    ]
+  }
+}
