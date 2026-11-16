@@ -2,7 +2,7 @@
 
 Personal configuration for the Ghostty terminal (1.4.0 stable, installed as a Homebrew cask) on macOS. Everything lives in one file, `config.ghostty`, which Ghostty reads from `$XDG_CONFIG_HOME/ghostty/` (`~/.config/ghostty/` when the variable is unset, as it is on this machine). The config copies the look and behaviour of the WezTerm setup (see Related Repos). Start by reading `config.ghostty`; its comments explain every value that is not obvious.
 
-This folder is not a git repository yet, so there is no history to fall back on and no commit flow (see Pull Requests).
+This folder is a git repository with no remote; see Pull Requests for the commit flow.
 
 ## Related Repos
 
@@ -60,16 +60,16 @@ ghostty +list-keybinds --default                 # the default keybinds
 - **Run `+validate-config` alone in a Claude Code shell call, or pipe it through `cat`.** Writing straight to Claude Code's captured output, it erases everything printed earlier in the same call (seen on 1.4.0). Its own output and exit code survive.
 - **Plain `+list-fonts` hides the configured font.** It lists `FiraCode Nerd Font Mono` but not `FiraCode Nerd Font`, which is the family the config uses and which Ghostty does load. Check a font with `--family` and `+show-face`, not with the plain list.
 - **Reloading is manual.** `Command+Shift+,` reloads the config; nothing reloads it on save. Some options only reach new windows or tabs, and some (for example `background-opacity` on macOS) need a full quit and restart of Ghostty. `+explain-config <key>` says which.
-- **Back up before editing** while this folder has no git: `cp config.ghostty "config.ghostty.bak-$(date +%Y%m%d-%H%M%S)"`, the same naming the WezTerm folder uses.
 - No database, network service or credential is involved, so nothing here can touch production.
 
 ## Pull Requests
 
-No git and no pull request flow yet. Until there is git, these rules apply to each edit, with the backup above in place of a commit.
+Single-owner repo with no remote and no pull request flow. Work is committed on a branch, never on `main`, and reaches `main` only through a merge the owner approves. These rules apply to each commit.
 
-- One concern per edit. A theme change and a keybind change never share one.
+- One concern per commit. A theme change and a keybind change never share one.
 - A fix is checked with the step that would have caught the problem (see "Check every edit in three steps").
-- A changed value whose comment explains it gets an updated comment in the same edit.
+- A changed value whose comment explains it gets an updated comment in the same commit.
+- Ghostty reads `config.ghostty` from whatever branch is checked out, so switching branches changes the config on the next reload.
 
 ## Project Contracts
 
@@ -112,4 +112,4 @@ None yet. If the file grows enough to split (for example keybinds in their own f
 - New option that is surprising or needs a restart: note it in Commands and Safety or Project Contracts.
 - Ghostty upgrade (`brew upgrade --cask ghostty`): update the version in the first paragraph and the Documentation Policy table, then run the three checks.
 - A path, command or URL in this file stops existing: fix it in the same change that removed it.
-- Paths here use `~/.config` or this folder, never one person's home folder spelled out. If the folder becomes a git repository, rewrite Pull Requests and drop the backup rule in the same change.
+- Paths here use `~/.config` or this folder, never one person's home folder spelled out.
