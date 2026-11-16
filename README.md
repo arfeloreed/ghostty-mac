@@ -39,6 +39,7 @@ nvim ~/.config/ghostty/config.ghostty
 | Kapal ng background (`background-opacity`) | `0.80` | `1` ay buo at hindi tagos, `0` ay kita ang lahat sa likod. Ako mismo ang nag-adjust nito. |
 | Labo ng nasa likod (`background-blur`) | `20` | Gaano kalabo ang desktop na nakikita sa likod. `20` ang sariling default ng Ghostty. |
 | Puwang sa gilid (`window-padding-x`, `window-padding-y`) | `3` sa kaliwa at kanan, `0` sa taas at baba | Manipis na puwang sa kaliwa at kanan, wala sa taas at baba. `2` sa lahat ng gilid ang default ng Ghostty. |
+| Pantay na puwang (`window-padding-balance`) | `true` | Bihirang sakto ang laki ng window sa bilang ng letra, kaya may natitirang konting puwang. Hinahati ito sa apat na gilid imbes na maipon sa kanan at sa ibaba. Hindi pinapalaki nang sobra ang puwang sa taas; ang sobra ay sa ibaba napupunta. |
 | Pagsara ng window o tab (`confirm-close-surface`) | `always` | Laging nagtatanong bago magsara, kahit walang tumatakbong program. Sa default ng Ghostty, nagtatanong lang kapag may tumatakbo pa. |
 
 ---
@@ -60,7 +61,7 @@ nvim ~/.config/ghostty/config.ghostty
 Mga paalala:
 
 - **Kapal ng background:** ang pagbago ng `background-opacity` ay hindi gumagana sa reload. Isara ang buong Ghostty (`Command+Q`) at buksan ulit.
-- **Puwang sa gilid:** ang pagbago ng `window-padding-x` at `window-padding-y` ay sa bagong window o tab lang lalabas.
+- **Puwang sa gilid:** ang pagbago ng `window-padding-x`, `window-padding-y` at `window-padding-balance` ay sa bagong window o tab lang lalabas.
 - **Comment:** ang `#` ay sa simula lang ng linya gumagana. Kapag nilagay sa dulo ng isang setting, magiging bahagi ito ng value at masisira ang setting.
 - **Git branch:** kung anong branch ang nakabukas, iyon ang config na babasahin ng Ghostty sa susunod na reload.
 

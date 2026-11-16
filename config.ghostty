@@ -23,6 +23,11 @@ background-blur = 20
 window-padding-x = 3
 window-padding-y = 0
 
+# The window is rarely an exact number of cells, so a sliver of space is
+# left over. Spread it over all four edges instead of piling it up on the
+# right and bottom (true caps the top share and puts the rest at the bottom).
+window-padding-balance = true
+
 # Always ask before closing a window or tab, even when nothing is running.
 # The default (true) asks only while a program is still running.
 confirm-close-surface = always
