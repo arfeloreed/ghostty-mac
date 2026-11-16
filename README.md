@@ -49,6 +49,7 @@ nvim ~/.config/ghostty/config.ghostty
 | Itago ang mouse (`mouse-hide-while-typing`) | `true` | Nawawala ang mouse habang nagta-type para hindi nito natatakpan ang text. Babalik ito pag ginalaw mo ang mouse. |
 | Ibalik ang mga window (`window-save-state`) | `always` | Sa pagbukas ulit ng Ghostty, babalik ang mga window, tab at hati, pati ang folder kung nasaan ka. Hindi babalik ang mga program na tumatakbo noon (halimbawa Neovim); bagong shell ang bubukas. |
 | Kopya pag nag-highlight (`copy-on-select`) | `clipboard` | Pag nag-highlight ka ng text gamit ang mouse, nasa clipboard na agad, hindi na kailangan ng `Command+C`. Paalala: napapalitan nito ang dating laman ng clipboard tuwing may hina-highlight ka. |
+| Para sa SSH (`shell-integration-features`) | `ssh-env,ssh-terminfo` | Pag nag-`ssh` ka sa isang server, inaayos nito ang kulay at mga key doon. Sa unang pagkonekta sa bawat server, naglalagay ang Ghostty ng maliit na file sa server na naglalarawan sa terminal (terminfo). Kapag hindi ito kaya ng server, ginagamit ang karaniwang `xterm-256color`. Nananatiling naka-on ang ibang sariling feature ng Ghostty sa shell. |
 
 ---
 
@@ -72,6 +73,7 @@ Mga paalala:
 - **Puwang sa gilid:** ang pagbago ng `window-padding-x`, `window-padding-y` at `window-padding-balance` ay sa bagong window o tab lang lalabas.
 - **Abiso pag tapos ang command:** sa unang abiso, tatanungin ka ng Mac kung papayagan ang Ghostty. Kung walang lumalabas, buksan ang System Settings, tapos Notifications, tapos Ghostty, at i-on.
 - **Ibalik ang mga window:** nase-save lang ang mga window pag isinara ang Ghostty (`Command+Q`). Kaya ang unang `Command+Q` pagkatapos baguhin ang `window-save-state` ang unang magse-save.
+- **Para sa SSH:** ang pagbago ng `shell-integration-features` ay sa bagong tab o window lang gagana, kasi doon lang may bagong shell.
 - **Comment:** ang `#` ay sa simula lang ng linya gumagana. Kapag nilagay sa dulo ng isang setting, magiging bahagi ito ng value at masisira ang setting.
 - **Git branch:** kung anong branch ang nakabukas, iyon ang config na babasahin ng Ghostty sa susunod na reload.
 

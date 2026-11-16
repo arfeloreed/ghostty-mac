@@ -72,3 +72,9 @@ window-save-state = always
 # also replaces whatever the clipboard held before. The macOS default is
 # none.
 copy-on-select = clipboard
+
+# Make ssh sessions behave: on first connect to a host, install Ghostty's
+# terminfo there with tic (ssh-terminfo), and fall back to xterm-256color
+# when that fails (ssh-env). Features left out keep their defaults, so
+# cursor, title and path stay on.
+shell-integration-features = ssh-env,ssh-terminfo
