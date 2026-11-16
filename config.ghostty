@@ -20,6 +20,10 @@ alpha-blending = linear-corrected
 # nothing).
 minimum-contrast = 1.1
 
+# A steady cursor, calmer on the eyes. Programs such as Neovim can still
+# ask for a blinking one.
+cursor-style-blink = false
+
 # See-through, blurred background. At 0.80 (tuned by eye) the desktop
 # shows through but text stays easy to read; 20 is Ghostty's own default
 # blur strength. The colour is darker than Nord's #2e3440 so text stays
