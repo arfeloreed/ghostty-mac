@@ -1,0 +1,25 @@
+# Ghostty config, mirrored from ~/.config/wezterm/wezterm.lua,
+# except the background: see-through here, wallpaper in WezTerm.
+# Reload after editing: cmd+shift+,  (Ghostty does not watch this file)
+
+theme = Nord
+
+# Same family and weight as WezTerm
+font-family = FiraCode Nerd Font
+font-style = Medium
+font-size = 18
+
+# See-through, blurred background instead of a wallpaper. At 0.85 the
+# desktop shows through but text stays easy to read; 20 is Ghostty's own
+# default blur strength. The colour is darker than Nord's #2e3440 so text
+# stays readable over a bright desktop. On macOS, a change to
+# background-opacity needs a full quit and reopen of Ghostty, not a reload.
+background = #1c1f2a
+background-opacity = 0.70
+background-blur = 20
+
+window-padding-x = 3
+window-padding-y = 0
+
+# Same as WezTerm AlwaysPrompt with an empty skip list
+confirm-close-surface = always
