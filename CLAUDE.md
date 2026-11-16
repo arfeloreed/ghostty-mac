@@ -1,20 +1,8 @@
 # Ghostty Config Developer Notes
 
-Personal configuration for the Ghostty terminal (1.4.0 stable, installed as a Homebrew cask) on macOS. Everything lives in one file, `config.ghostty`, which Ghostty reads from `$XDG_CONFIG_HOME/ghostty/` (`~/.config/ghostty/` when the variable is unset, as it is on this machine). The config copies the look and behaviour of the WezTerm setup (see Related Repos). Start by reading `config.ghostty`; its comments explain every value that is not obvious. [README.md](./README.md) is the owner's guide to the same config.
+Personal configuration for the Ghostty terminal (1.4.0 stable, installed as a Homebrew cask) on macOS. Everything lives in one file, `config.ghostty`, which Ghostty reads from `$XDG_CONFIG_HOME/ghostty/` (`~/.config/ghostty/` when the variable is unset, as it is on this machine). Start by reading `config.ghostty`; its comments explain every value that is not obvious. [README.md](./README.md) is the owner's guide to the same config.
 
 This folder is a git repository with no remote; see Pull Requests for the commit flow.
-
-## Related Repos
-
-| Repo | Folder | What it is | Takes effect by |
-|---|---|---|---|
-| Ghostty config (this folder) | `~/.config/ghostty` | The terminal config, mirrored from WezTerm | `Command+Shift+,` in Ghostty (`reload_config`) |
-| WezTerm config | `~/.config/wezterm` | The original config this one copies (`wezterm.lua`) | WezTerm reloads it on save |
-
-Rules for changes that cross the two:
-
-- **WezTerm is the source of the look.** Theme, font family, weight and size, window padding and the close confirmation were copied from `wezterm.lua`. When one of these changes in either folder, ask whether the other should follow. Never change the other folder without that answer.
-- **The background differs on purpose.** WezTerm shows a dimmed wallpaper; Ghostty has a see-through, blurred background (`background-opacity`, `background-blur`) and no image. Do not copy one background to the other unless asked.
 
 ## Documentation Policy
 
@@ -84,7 +72,7 @@ Single-owner repo with no remote and no pull request flow. Work is committed on 
 font-size = 18
 ```
 
-**Every value that is tuned, copied or surprising carries a comment above it saying why.** The current file does this for the WezTerm mirror and the background opacity, blur and colour. Keep it that way, so a later edit does not "fix" a value that was chosen on purpose.
+**Every value that is tuned, copied or surprising carries a comment above it saying why.** The current file does this for the font, the background colour, opacity and blur, the padding and the close confirmation. Keep it that way, so a later edit does not "fix" a value that was chosen on purpose.
 
 **One config file, in one place.** Ghostty loads, in order, `config.ghostty` and `config` from this folder, then the same two names from `~/Library/Application Support/com.mitchellh.ghostty/`; a later file overrides an earlier one. Only `config.ghostty` here exists (the name needs Ghostty 1.2.3 or later). Never create `config` here or any file in the Application Support folder, because a value set in two files is decided by load order, not by what you read.
 

@@ -1,5 +1,4 @@
-# Ghostty config, mirrored from ~/.config/wezterm/wezterm.lua,
-# except the background: see-through here, wallpaper in WezTerm.
+# Ghostty config.
 # Reload after editing: cmd+shift+,  (Ghostty does not watch this file)
 
 theme = Nord
@@ -10,17 +9,20 @@ theme = Nord
 # default of 13.
 font-size = 18
 
-# See-through, blurred background instead of a wallpaper. At 0.80 (tuned
-# by eye) the desktop shows through but text stays easy to read; 20 is
-# Ghostty's own default blur strength. The colour is darker than Nord's
-# #2e3440 so text stays readable over a bright desktop. On macOS, a change
-# to background-opacity needs a full quit and reopen of Ghostty, not a reload.
+# See-through, blurred background. At 0.80 (tuned by eye) the desktop
+# shows through but text stays easy to read; 20 is Ghostty's own default
+# blur strength. The colour is darker than Nord's #2e3440 so text stays
+# readable over a bright desktop. On macOS, a change to background-opacity
+# needs a full quit and reopen of Ghostty, not a reload.
 background = #1c1f2a
 background-opacity = 0.80
 background-blur = 20
 
+# A thin gap at the sides and none at the top and bottom (the default is 2
+# on every side).
 window-padding-x = 3
 window-padding-y = 0
 
-# Same as WezTerm AlwaysPrompt with an empty skip list
+# Always ask before closing a window or tab, even when nothing is running.
+# The default (true) asks only while a program is still running.
 confirm-close-surface = always

@@ -17,7 +17,6 @@ Ito ang paliwanag kung ano ang laman ng Ghostty config ko, saan makikita ang baw
 | Mga command na pwedeng patakbuhin ni Claude nang hindi nagtatanong | `~/.config/ghostty/.claude/settings.json` |
 | Listahan ng mga file na hindi isasama sa git | `~/.config/ghostty/.gitignore` |
 | Personal kong notes (wala sa git) | `~/.config/ghostty/reed-docs/` |
-| Ang WezTerm config na pinagkopyahan ng itsura | `~/.config/wezterm/wezterm.lua` |
 
 Isang file lang ang config: `config.ghostty`. Huwag gumawa ng file na `config` sa folder na ito, o ng kahit anong file sa `~/Library/Application Support/com.mitchellh.ghostty/`. Binabasa rin ng Ghostty ang mga iyon, at ang huling nabasa ang nasusunod. Kaya kung nasa dalawang file ang isang setting, mahirap malaman kung alin ang gumagana.
 
@@ -33,15 +32,13 @@ nvim ~/.config/ghostty/config.ghostty
 
 | Setting | Value | Ibig sabihin |
 | --- | --- | --- |
-| Theme (`theme`) | `Nord` | Ang mga kulay ng terminal. Galing sa WezTerm. |
+| Theme (`theme`) | `Nord` | Ang mga kulay ng terminal. |
 | Font (`font-size`) | JetBrains Mono, `18` | Sariling font ng Ghostty. Ito ang ginagamit kasi walang `font-family` sa config. Galing din sa Ghostty ang mga icon (Symbols Nerd Font). Mas malaki ang `18` kaysa sa default na `13`. |
 | Kulay ng background (`background`) | `#1c1f2a` | Mas madilim kaysa sa sariling kulay ng Nord (`#2e3440`), para mabasa pa rin ang text kahit maliwanag ang desktop sa likod. |
 | Kapal ng background (`background-opacity`) | `0.80` | `1` ay buo at hindi tagos, `0` ay kita ang lahat sa likod. Ako mismo ang nag-adjust nito. |
 | Labo ng nasa likod (`background-blur`) | `20` | Gaano kalabo ang desktop na nakikita sa likod. `20` ang sariling default ng Ghostty. |
-| Puwang sa gilid (`window-padding-x`, `window-padding-y`) | `3` sa kaliwa at kanan, `0` sa taas at baba | Pareho sa WezTerm. |
-| Pagsara ng window o tab (`confirm-close-surface`) | `always` | Laging nagtatanong bago magsara, kahit walang tumatakbong program. Pareho sa WezTerm. |
-
-Ang pinagkaiba sa WezTerm: may wallpaper sa likod ng WezTerm. Sa Ghostty, wala; tagos at malabo ang background. Sinadya ito.
+| Puwang sa gilid (`window-padding-x`, `window-padding-y`) | `3` sa kaliwa at kanan, `0` sa taas at baba | Manipis na puwang sa kaliwa at kanan, wala sa taas at baba. `2` sa lahat ng gilid ang default ng Ghostty. |
+| Pagsara ng window o tab (`confirm-close-surface`) | `always` | Laging nagtatanong bago magsara, kahit walang tumatakbong program. Sa default ng Ghostty, nagtatanong lang kapag may tumatakbo pa. |
 
 ---
 
