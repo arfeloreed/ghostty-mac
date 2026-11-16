@@ -36,7 +36,7 @@ nvim ~/.config/ghostty/config.ghostty
 | Theme (`theme`) | `Nord` | Ang mga kulay ng terminal. Galing sa WezTerm. |
 | Font (`font-family`, `font-style`, `font-size`) | `FiraCode Nerd Font`, `Medium`, `18` | Pareho sa WezTerm. |
 | Kulay ng background (`background`) | `#1c1f2a` | Mas madilim kaysa sa sariling kulay ng Nord (`#2e3440`), para mabasa pa rin ang text kahit maliwanag ang desktop sa likod. |
-| Kapal ng background (`background-opacity`) | `0.70` | `1` ay buo at hindi tagos, `0` ay kita ang lahat sa likod. Ako mismo ang nag-adjust nito. |
+| Kapal ng background (`background-opacity`) | `0.80` | `1` ay buo at hindi tagos, `0` ay kita ang lahat sa likod. Ako mismo ang nag-adjust nito. |
 | Labo ng nasa likod (`background-blur`) | `20` | Gaano kalabo ang desktop na nakikita sa likod. `20` ang sariling default ng Ghostty. |
 | Puwang sa gilid (`window-padding-x`, `window-padding-y`) | `3` sa kaliwa at kanan, `0` sa taas at baba | Pareho sa WezTerm. |
 | Pagsara ng window o tab (`confirm-close-surface`) | `always` | Laging nagtatanong bago magsara, kahit walang tumatakbong program. Pareho sa WezTerm. |
